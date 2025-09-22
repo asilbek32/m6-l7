@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Card({ product }) {
   return (
     <>
-      <Link to={"/pro"}>
+      <Link to={`/product/${product.id}`}>
         <div className="flex flex-col gap-1">
           <div>
             <img src={product.thumbnail} alt="" />
@@ -19,6 +19,7 @@ function Card({ product }) {
           </button>
         </div>
       </Link>
+
     </>
   );
 }

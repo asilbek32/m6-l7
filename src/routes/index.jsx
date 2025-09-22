@@ -4,9 +4,9 @@ import Home from "../pages/home/home";
 import About from "../pages/about/about";
 import Contact from "../pages/conatct/contect";
 import MainLAaout from "../componenets/main-layout";
-import ContactItem from "../pages/conatct/contact-item";
 import PrivateRoute from "./private-route";
 import Login from "../pages/login/login";
+import ProductInfo from "../pages/product-info";
 
 const router = createBrowserRouter([
   {
@@ -30,8 +30,8 @@ const router = createBrowserRouter([
             element: <Contact />,
           },
           {
-            path: "/contact/:id",
-            element: <ContactItem />,
+            path: "/product/:id",
+            element: <ProductInfo />,
           },
         ],
       },
